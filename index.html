@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desenvolvimento Sustentável</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    body {
+      font-family: "Permanent Marker", cursive;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background-image: url(backheader.jpg);
+      background-size: contain;
+      color: rgb(0, 0, 0);
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #388e3c;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: rgb(255, 255, 255);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 40px;
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    h2 {
+      color: #2e7d32;
+    }
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+  </style>
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    window.onload = function() {
+      showSection('inicio');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Desenvolvimento Sustentável</h1>
+    <p>Energia Limpa, Resíduos, Água e Consumo Consciente</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('inicio')">Início</a>
+    <a href="#" onclick="showSection('energia')">Energia Limpa</a>
+    <a href="#" onclick="showSection('residuos')">Gestão de Resíduos</a>
+    <a href="#" onclick="showSection('agua')">Água Potável</a>
+    <a href="#" onclick="showSection('consumo')">Consumo Consciente</a>
+    <a href="#" onclick="showSection('dicas')">Dicas Sustentáveis</a>
+    <a href="#" onclick="showSection('referencias')">Referências</a>
+  </nav>
+
+  <main>
+    <section id="inicio">
+      <h2>Bem-vindo!</h2>
+      <p>Este site foi desenvolvido como parte da Atividade Prática Supervisionada (APS) com o tema "Desenvolvimento Sustentável". Neste trabalho, abordamos temas fundamentais para o nosso futuro, com foco em práticas que podem ser adotadas para melhorar a sustentabilidade do nosso planeta. A sustentabilidade envolve o uso responsável dos recursos naturais, a proteção do meio ambiente e a promoção de um desenvolvimento econômico que atenda às necessidades do presente sem comprometer as gerações futuras.</p>
+      <p>Através deste site, buscamos divulgar informações e incentivar a prática de hábitos sustentáveis no dia a dia. A sustentabilidade é um conceito amplo e pode ser aplicada em várias áreas, como energia, resíduos, água, consumo e muito mais. Neste espaço, exploraremos quatro tópicos essenciais para a construção de um futuro mais sustentável.</p>
+      <img src="imagem1.jpg" alt="Planeta Terra sustentável">
+    </section>
+
+    <section id="energia">
+      <h2>Energia Limpa e Renovável</h2>
+      <p>A energia limpa e renovável é fundamental para reduzir as emissões de gases de efeito estufa e combater as mudanças climáticas. Fontes como solar, eólica, hidráulica, biomassa e geotérmica não apenas geram eletricidade de forma limpa, mas também contribuem para a diversificação da matriz energética global, diminuindo a dependência de combustíveis fósseis.</p>
+      <p>No Brasil, a energia hidrelétrica é a principal fonte de energia renovável. No entanto, o país também tem avançado consideravelmente na adoção de energia solar e eólica. A energia solar, por exemplo, tem mostrado um crescimento expressivo, com muitas famílias e empresas instalando painéis solares para gerar sua própria eletricidade e reduzir a conta de energia.</p>
+      <p>Investir em energias renováveis não só contribui para um ambiente mais limpo, mas também cria oportunidades de emprego e desenvolvimento tecnológico. Empresas e governos estão cada vez mais incentivando a transição para fontes de energia renováveis, e o futuro da energia será inevitavelmente mais verde.</p>
+      <img src="imagem2.jpg" alt="Painéis solares">
+    </section>
+
+    <section id="residuos">
+      <h2>Gestão de Resíduos e Reciclagem</h2>
+      <p>A gestão adequada de resíduos sólidos é um dos maiores desafios ambientais da atualidade. O descarte inadequado de resíduos pode levar à poluição dos solos, das águas e do ar. A implementação de práticas de reciclagem e a promoção da coleta seletiva são fundamentais para minimizar esses impactos.</p>
+      <p>A reciclagem de materiais como plástico, papel, vidro e metal contribui para a redução do uso de recursos naturais, diminui a quantidade de lixo enviado aos aterros sanitários e economiza energia. Além disso, a compostagem de resíduos orgânicos transforma lixo em adubo, o que é excelente para a agricultura e jardinagem.</p>
+      <p>Em muitas cidades, a educação sobre a separação de resíduos e a criação de programas de coleta seletiva têm levado a um aumento da reciclagem. No entanto, ainda há muito a ser feito. A conscientização da população e a adaptação de infraestruturas adequadas para o tratamento e descarte de resíduos são essenciais para garantir um ambiente mais limpo e sustentável.</p>
+      <img src="imagem3.jpg" alt="Materiais recicláveis">
+    </section>
+
+    <section id="agua">
+      <h2>Água Potável e Saneamento</h2>
+      <p>A água potável é um recurso essencial para a vida humana e para a saúde pública. Contudo, milhões de pessoas no mundo ainda não têm acesso à água tratada e ao saneamento básico. A falta de acesso a esses serviços pode levar a doenças, poluição e escassez de água.</p>
+      <p>O desperdício de água também é um problema crescente. A conscientização sobre o uso racional da água, como consertar vazamentos, reduzir o tempo de banho e adotar sistemas de reutilização da água, são práticas simples que podem gerar grandes benefícios.</p>
+      <p>Além disso, a preservação das fontes de água, como rios e nascentes, é vital para garantir o abastecimento no futuro. O tratamento de esgoto, o controle da poluição hídrica e o investimento em infraestrutura de saneamento são medidas fundamentais para garantir água limpa e tratada para todos.</p>
+      <img src="imagem4.png" alt="Água limpa sendo servida">
+    </section>
+
+    <section id="consumo">
+      <h2>Consumo Consciente</h2>
+      <p>O consumo consciente envolve a reflexão sobre as escolhas que fazemos como consumidores. Antes de adquirir um produto, é importante questionar se realmente precisamos dele e qual será o impacto ambiental e social da sua produção e descarte.</p>
+      <p>Optar por produtos duráveis, com menos embalagem e provenientes de fontes responsáveis, pode reduzir significativamente a pegada ecológica. Além disso, adotar práticas como a reutilização de produtos, o reparo de objetos e a doação de itens que não usamos mais, contribui para uma economia mais circular.</p>
+      <p>O consumo consciente também está relacionado ao respeito aos direitos trabalhistas e à escolha por marcas que se preocupam com a ética e a justiça social. Em um mundo com recursos finitos, é essencial repensar nossos hábitos de consumo para garantir um futuro mais justo e sustentável para todos.</p>
+      <img src="imagem5.jpg" alt="Compras sustentáveis">
+    </section>
+
+    <section id="dicas">
+      <h2>Dicas Sustentáveis</h2>
+      <ul>
+        <li>Reduza o uso de plástico.</li>
+        <li>Desligue luzes e aparelhos quando não estiverem em uso.</li>
+        <li>Reaproveite a água da chuva para regar plantas.</li>
+        <li>Separe e recicle o lixo corretamente.</li>
+        <li>Coma mais alimentos de produção local e orgânica.</li>
+        <li>Prefira transporte público ou bicicletas.</li>
+        <li>Evite o desperdício de alimentos e doe o que não for consumido.</li>
+        <li>Considere adotar uma dieta vegetariana ou vegana.</li>
+      </ul>
+      <img src="imagem6.jpg" alt="Sacolas reutilizáveis e frutas">
+    </section>
+
+    <section id="referencias">
+      <h2>Referências</h2>
+      <ul>
+        <li>BRASIL. Ministério do Meio Ambiente. https://www.gov.br/mma</li>
+        <li>ANEEL. Agência Nacional de Energia Elétrica. https://www.aneel.gov.br</li>
+        <li>ABRELPE. Associação Brasileira de Empresas de Limpeza Pública. https://www.abrelpe.org.br</li>
+        <li>ONU BRASIL. Objetivos de Desenvolvimento Sustentável. https://brasil.un.org/pt-br/sdgs</li>
+        <li>IBGE. Indicadores de Desenvolvimento Sustentável. https://www.ibge.gov.br</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Site desenvolvido como parte da APS – Desenvolvimento Sustentável</p>
+  </footer>
+</body>
+</html>
